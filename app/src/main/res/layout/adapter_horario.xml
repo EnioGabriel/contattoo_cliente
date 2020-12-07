@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/background_caixa_texto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Horário de ínicio" />
+
+    <EditText
+        android:id="@+id/txtHorarioInicioAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/borda_imagem"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="16:30"
+        android:textColor="@color/cor_botoes" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Previsão de término" />
+
+    <EditText
+        android:id="@+id/txtPrevisaoTerminoAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/borda_imagem"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="18:30"
+        android:textColor="@color/cor_botoes" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Data" />
+
+    <EditText
+        android:id="@+id/txtDataAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/borda_imagem"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="21/07/2020"
+        android:textColor="@color/cor_botoes" />
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarDayAdapterHorario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/borda_imagem"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="false"
+        android:saveEnabled="false"
+        app:mcv_leftArrowMask="@drawable/ic_baseline_arrow_back_24"
+        app:mcv_rightArrowMask="@drawable/ic_baseline_arrow_forward_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:mcv_dateTextAppearance="@style/CalenderViewTextoPersonalizado"
+        app:mcv_headerTextAppearance="@style/CalenderViewPersonalizado"
+        app:mcv_selectionColor="@color/cor_botoes"
+        app:mcv_showOtherDates="none"
+        app:mcv_weekDayTextAppearance="@style/CalenderViewSemanaTextoPersonalizado" />
+
+    <Button
+        android:id="@+id/btnAceitarHorarioAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_botao_perfil"
+        android:text="Confirmar horário" />
+</LinearLayout>
